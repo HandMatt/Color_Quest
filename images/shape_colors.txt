@@ -1,0 +1,5 @@
+bars color rgb: 182, 74, 62;
+triangle color rgb: 255, 190, 103;
+circle color rgb: 182, 161, 62;
+righttrap color rgb: 36, 122, 151;
+lefttrap color rgb: 161, 142, 255;

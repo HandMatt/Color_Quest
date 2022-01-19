@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Color Quest</title>
+  <link rel="stylesheet" href="./styles/game.css">
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <h1>Color Quest</h1>
+    </div>
+  </header>
+
+  <section id="game" class="row">
+    <div id="game-scene" class="scene out">
+      <div id="timer"></div>
+      <div id="stage">Stage 1</div>
+      <div id="quest" class="quest">
+        <div id="quest-composition" class="composition"></div>
+      </div>
+      <div id="your-composition"></div>
+      <div id="deck" class="deck"></div>
+      <a href="#" id="undo-button" class="button">Undo</a>
+    </div>
+    <div id="start-scene" class="scene">
+      <a href="#" id="start-btn" class="button">Start Game</a>
+    </div>
+    <div id="summary-scene" class="scene out">
+      <a href="#" id="next-level-button" class="button">Next</a>
+    </div>
+    <div id="gameover-scene" class="scene out">
+      <a href="#" id="back-to-menu-button" class="button">Back to menu</a>
+    </div>
+  </section>
+
+  <section class="how-to-play row">
+    <h2>How to Play?</h2>
+    <p>You will be provided a target pattern and a deck of cards. Click each of your card in order to layer your cards to match the given pattern.</p>
+  </section>
+
+  <footer>
+    <div id="footer" class="row">
+      <details>
+        <summary>Copyright Information</summary>
+        This game is a modified example from the <a href="https://www.packtpub.com/product/html5-game-development-hotshot/9781849695466" target="_blank">'HTML5 Game Development HOTSHOT'</a> book by Makzan. Free for personal and commercial use.
+      </details>
+    </div>
+  </footer>
+
+  <div id="element-template">
+    <!-- for deck view -->
+    <div class="pattern-slot">
+      <div class="pattern" data-pattern="1"></div>
+    </div>
+    <!-- for composition view -->
+    <div class="pattern" data-pattern="1"></div>
+  </div>
+
+  <script src="./js/patch.js"></script>
+  <script src="./js/composition.js"></script>
+  <script src="./js/composition-view.js"></script>
+  <script src="./js/quest.js"></script>
+  <script src="./js/scenes.js"></script>
+  <script src="./js/timer.js"></script>
+  <script src="./js/game.js"></script>
+</body>
+</html>
